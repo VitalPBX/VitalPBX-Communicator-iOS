@@ -432,6 +432,7 @@ static UICompositeViewDescription *compositeDescription = nil;
         _addContactButton.hidden = TRUE;
     }
     
+    
 }
 
 - (IBAction)onBackspaceClick:(id)sender {
