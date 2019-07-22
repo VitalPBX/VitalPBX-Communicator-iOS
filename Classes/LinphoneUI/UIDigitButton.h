@@ -28,4 +28,6 @@
 @property char digit;
 @property bool dtmf;
 
+-(void)setHighlighted:(BOOL)highlighted;
+
 @end

@@ -39,6 +39,7 @@
 										   selector:@selector(messageReceived:)
 											   name:kLinphoneMessageReceived
 											 object:nil];
+
 	[self update:FALSE];
 }
 
@@ -109,20 +110,20 @@
 						   [view equal:ChatConversationImdnView.compositeViewDescription] ||
 						   [view equal:ChatConversationView.compositeViewDescription];
     
-    // side menu alternative - settings button
+    _settingsButton.selected = [view equal:DialerView.compositeViewDescription];
     
     
 	CGRect selectedNewFrame = _selectedButtonImage.frame;
 	if ([self viewIsCurrentlyPortrait]) {
 		selectedNewFrame.origin.x =
 			(_historyButton.selected
-				 ? _historyButton.frame.origin.x
+				 ? _historyIconView.frame.origin.x
 				 : (_contactsButton.selected
-						? _contactsButton.frame.origin.x
+						? _contactIconView.frame.origin.x
 						: (_dialerButton.selected
-							   ? _dialerButton.frame.origin.x
+							   ? _dialpadIconView.frame.origin.x
 							   : (_chatButton.selected
-									  ? _chatButton.frame.origin.x
+									  ? _chatIconView.frame.origin.x
 									  : -selectedNewFrame.size.width /*hide it if none is selected*/))));
 	} else {
 		selectedNewFrame.origin.y =
@@ -166,7 +167,9 @@
 }
 
 - (IBAction)onSettingsClick:(id)event {
-	[PhoneMainView.instance changeCurrentView:SettingsView.compositeViewDescription];
+	//[PhoneMainView.instance changeCurrentView:SettingsView.compositeViewDescription];
+    UICompositeView *cvc = PhoneMainView.instance.mainViewController;
+    [cvc hideSideMenu:(cvc.sideMenuView.frame.origin.x == 0)];
 }
 
 - (IBAction)onChatClick:(id)event {

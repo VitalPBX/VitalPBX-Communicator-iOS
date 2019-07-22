@@ -28,6 +28,7 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="color_A.png" id="mcm-kl-NzJ" userLabel="backgroundView">
                     <rect key="frame" x="0.0" y="0.0" width="360" height="42"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.55516082048416138" green="0.75022923946380615" blue="0.20782309770584106" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </imageView>
                 <view hidden="YES" contentMode="scaleToFill" id="0Vp-VF-wmX" userLabel="incallView">
                     <rect key="frame" x="0.0" y="0.0" width="360" height="42"/>
@@ -36,6 +37,7 @@
                         <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="27" userLabel="callSecurityButton">
                             <rect key="frame" x="332" y="0.0" width="24" height="42"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.55516082048416138" green="0.75022923946380615" blue="0.20782309770584106" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <accessibility key="accessibilityConfiguration">
                                 <bool key="isElement" value="NO"/>
                             </accessibility>
@@ -54,6 +56,7 @@
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="SKk-s0-5HE" userLabel="callQualityButton">
                             <rect key="frame" x="0.0" y="0.0" width="42" height="42"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.55516082050000004" green="0.75022923949999998" blue="0.20782309769999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <state key="normal" image="call_quality_indicator_4.png">
                                 <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -63,6 +66,7 @@
                             </connections>
                         </button>
                     </subviews>
+                    <color key="backgroundColor" red="0.55516082050000004" green="0.75022923949999998" blue="0.20782309769999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </view>
                 <view contentMode="scaleToFill" id="lfO-I4-PXi" userLabel="outcallView">
                     <rect key="frame" x="0.0" y="0.0" width="360" height="42"/>
@@ -91,6 +95,7 @@
                             </state>
                         </button>
                     </subviews>
+                    <color key="backgroundColor" red="0.55516082050000004" green="0.75022923949999998" blue="0.20782309769999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Mhg-P6-RfU" userLabel="registrationState" customClass="UIIconButton">
                     <rect key="frame" x="46" y="0.0" width="194" height="42"/>

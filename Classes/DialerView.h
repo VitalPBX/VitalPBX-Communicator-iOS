@@ -34,7 +34,8 @@
 @property(nonatomic, strong) IBOutlet UIButton *addContactButton;
 @property(nonatomic, strong) IBOutlet UICallButton *callButton;
 @property(nonatomic, strong) IBOutlet UIButton *backButton;
-@property(weak, nonatomic) IBOutlet UIIconButton *backspaceButton;
+@property(weak, nonatomic) IBOutlet UIButton *backspaceButton;
+@property(weak, nonatomic) IBOutlet UIButton *backspaceNuevo;
 
 @property(nonatomic, strong) IBOutlet UIDigitButton *oneButton;
 @property(nonatomic, strong) IBOutlet UIDigitButton *twoButton;

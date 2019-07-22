@@ -29,6 +29,13 @@
 @property(nonatomic, strong) IBOutlet UIButton *dialerButton;
 @property(nonatomic, strong) IBOutlet UIButton *chatButton;
 @property(nonatomic, strong) IBOutlet UIButton *settingsButton;
+
+// views used to easily change icons sizes
+@property(nonatomic, strong) IBOutlet UIIconButton *contactIconView;
+@property(nonatomic, strong) IBOutlet UIView *dialpadIconView;
+@property(nonatomic, strong) IBOutlet UIView *historyIconView;
+@property(nonatomic, strong) IBOutlet UIView *chatIconView;
+
 @property(nonatomic, strong) IBOutlet UIBouncingView *historyNotificationView;
 @property(nonatomic, strong) IBOutlet UIBouncingView *chatNotificationView;
 @property(nonatomic, strong) IBOutlet UILabel *chatNotificationLabel;

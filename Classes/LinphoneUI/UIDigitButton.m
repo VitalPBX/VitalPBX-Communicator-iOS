@@ -64,6 +64,7 @@
 #pragma mark - Actions Functions
 
 - (void)touchDown:(id)sender {
+    [self setHighlighted:TRUE];
 	if (addressField && (!dtmf || !linphone_core_in_call(LC))) {
 		NSString *newAddress = [NSString stringWithFormat:@"%@%c", addressField.text, digit];
 		[addressField setText:newAddress];
@@ -76,6 +77,34 @@
 
 - (void)touchUp:(id)sender {
 	linphone_core_stop_dtmf(LC);
+    [self setHighlighted:FALSE];
+}
+
+// override setHighlighted method to avoid change of background
+- (void)setHighlighted:(BOOL)highlighted {
+    [super setHighlighted:highlighted];
+
+    if(highlighted) {
+        /*self.backgroundColor = [UIColor colorWithRed:254.0f/255.0f
+                                               green:254.0f/255.0f
+                                                blue:254.0f/255.0f
+                                               alpha:1.0f];
+        self.tintColor = [UIColor colorWithRed:25.0f/255.0f
+                                         green:25.0f/255.0f
+                                          blue:250.0f/255.0f
+                                         alpha:1.0f];*/
+        self.backgroundColor = [UIColor groupTableViewBackgroundColor];
+    } else {
+        self.backgroundColor = [UIColor colorWithRed:255.0f/255.0f
+                                               green:255.0f/255.0f
+                                                blue:255.0f/255.0f
+                                               alpha:1.0f];
+        /*self.tintColor = [UIColor colorWithRed:255.0f/255.0f
+                                         green:255.0f/255.0f
+                                          blue:255.0f/255.0f
+                                         alpha:0.0f];*/
+    }
+    
 }
 
 @end

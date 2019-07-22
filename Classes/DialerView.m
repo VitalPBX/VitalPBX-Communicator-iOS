@@ -129,8 +129,11 @@ static UICompositeViewDescription *compositeDescription = nil;
 	[_addressField setAdjustsFontSizeToFitWidth:TRUE]; // Not put it in IB: issue with placeholder size
 
     // Add contact logic
-    /*[_addContactButton setImage:[UIImage imageNamed:@"add_contact_btn.png"]forState:(UIControlStateDisabled | UIControlStateSelected)];
-    _addContactButton.hidden = TRUE;*/
+    [_addContactButton setImage:[UIImage imageNamed:@"add_contact_btn.png"]forState:(UIControlStateDisabled | UIControlStateSelected)];
+    _addContactButton.hidden = TRUE;
+    
+    
+    _backspaceButton.hidden = TRUE;
     
 	UILongPressGestureRecognizer *backspaceLongGesture =
 		[[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(onBackspaceLongClick:)];
@@ -193,6 +196,11 @@ static UICompositeViewDescription *compositeDescription = nil;
 - (void)viewDidAppear:(BOOL)animated {
 	[super viewDidAppear:animated];
 	[LinphoneManager.instance shouldPresentLinkPopup];
+    
+    [_addContactButton setImage:[UIImage imageNamed:@"add_contact_btn.png"]forState:(UIControlStateDisabled | UIControlStateSelected)];
+    
+    _addContactButton.hidden = TRUE;
+    _backspaceButton.hidden = TRUE;
 }
 
 #pragma mark - Event Functions
@@ -362,6 +370,7 @@ static UICompositeViewDescription *compositeDescription = nil;
 	_backButton.hidden = !callInProgress;
     
 	[_callButton updateIcon];
+    _callButton.hidden = FALSE;
 }
 
 - (void)setAddress:(NSString *)address {
@@ -418,10 +427,16 @@ static UICompositeViewDescription *compositeDescription = nil;
 	if ([self displayDebugPopup:_addressField.text]) {
 		_addressField.text = @"";
 	}
-	_addContactButton.enabled = _backspaceButton.enabled = ([[_addressField text] length] > 0);
+    
+    // add contacts not available during calls
+    _addContactButton.enabled = ([[_addressField text] length] > 0) && (linphone_core_get_calls_nb(LC) == 0);
+    
+	_backspaceButton.enabled = ([[_addressField text] length] > 0);
     
     if(_addContactButton.enabled) {
         _addContactButton.hidden = FALSE;
+    }
+    if(_backspaceButton.enabled) {
         _backspaceButton.hidden = FALSE;
     }
     
