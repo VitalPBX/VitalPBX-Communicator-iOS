@@ -117,13 +117,13 @@
 	if ([self viewIsCurrentlyPortrait]) {
 		selectedNewFrame.origin.x =
 			(_historyButton.selected
-				 ? _historyIconView.frame.origin.x
+				 ? _historyButton.frame.origin.x
 				 : (_contactsButton.selected
-						? _contactIconView.frame.origin.x
+						? _contactsButton.frame.origin.x
 						: (_dialerButton.selected
-							   ? _dialpadIconView.frame.origin.x
+							   ? _dialerButton.frame.origin.x
 							   : (_chatButton.selected
-									  ? _chatIconView.frame.origin.x
+									  ? _chatButton.frame.origin.x
 									  : -selectedNewFrame.size.width /*hide it if none is selected*/))));
 	} else {
 		selectedNewFrame.origin.y =
