@@ -13,6 +13,7 @@
             <connections>
                 <outlet property="addButton" destination="6" id="91"/>
                 <outlet property="allButton" destination="4" id="27"/>
+                <outlet property="deleteButton" destination="DZc-zR-1Q7" id="huG-Nw-kcA"/>
                 <outlet property="linphoneButton" destination="5" id="31"/>
                 <outlet property="searchBar" destination="5jE-oF-d45" id="xfS-xo-2Bm"/>
                 <outlet property="selectedButtonImage" destination="A9k-KU-Dlm" id="4dX-pd-Y2D"/>
@@ -44,17 +45,17 @@
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4" userLabel="allButton" customClass="UIIconButton">
                                             <rect key="frame" x="0.0" y="0.0" width="75" height="66"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                                             <accessibility key="accessibilityConfiguration" label="All contacts filter"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="9"/>
-                                            <inset key="titleEdgeInsets" minX="-38" minY="15" maxX="0.0" maxY="0.0"/>
-                                            <inset key="imageEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                            <state key="normal" image="contacts_all_default.png">
+                                            <inset key="contentEdgeInsets" minX="20" minY="20" maxX="20" maxY="15"/>
+                                            <inset key="titleEdgeInsets" minX="0.0" minY="18" maxX="0.0" maxY="0.0"/>
+                                            <state key="normal" image="contacts_icon.png">
                                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
-                                            <state key="disabled" image="contacts_all_disabled.png"/>
-                                            <state key="selected" image="contacts_all_selected.png">
+                                            <state key="disabled" image="contacts_icon.png"/>
+                                            <state key="selected" image="contacts_icon.png">
                                                 <color key="titleColor" red="0.98766469955444336" green="0.27512490749359131" blue="0.029739789664745331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
                                             <state key="highlighted" backgroundImage="color_E.png"/>
@@ -62,21 +63,23 @@
                                                 <action selector="onAllClick:" destination="-1" eventType="touchUpInside" id="29"/>
                                             </connections>
                                         </button>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="color_A.png" id="A9k-KU-Dlm" userLabel="selectedButtonImage">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="color_L.png" id="A9k-KU-Dlm" userLabel="selectedButtonImage">
                                             <rect key="frame" x="0.0" y="63" width="75" height="3"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                                         </imageView>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5" userLabel="sipButton" customClass="UIIconButton">
                                             <rect key="frame" x="75" y="0.0" width="75" height="66"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                                             <accessibility key="accessibilityConfiguration" label="Linphone contacts filter"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="9"/>
-                                            <state key="normal" image="contacts_sip_default.png">
+                                            <inset key="contentEdgeInsets" minX="20" minY="20" maxX="20" maxY="15"/>
+                                            <inset key="titleEdgeInsets" minX="0.0" minY="18" maxX="0.0" maxY="0.0"/>
+                                            <state key="normal" image="vpbx_contacts.png">
                                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
                                             <state key="disabled" image="contacts_sip_disabled.png"/>
-                                            <state key="selected" image="contacts_sip_selected.png">
+                                            <state key="selected" image="vpbx_contacts.png">
                                                 <color key="titleColor" red="0.98766469955444336" green="0.27512490749359131" blue="0.029739789664745331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
                                             <state key="highlighted" backgroundImage="color_E.png"/>
@@ -104,12 +107,13 @@
                                     <rect key="frame" x="300" y="0.0" width="75" height="66"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                                     <accessibility key="accessibilityConfiguration" label="Delete all"/>
+                                    <inset key="contentEdgeInsets" minX="20" minY="20" maxX="20" maxY="15"/>
                                     <inset key="titleEdgeInsets" minX="0.0" minY="18" maxX="0.0" maxY="0.0"/>
-                                    <state key="normal" image="delete_default.png">
+                                    <state key="normal" image="trash_icon.png">
                                         <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
-                                    <state key="disabled" image="delete_disabled.png"/>
-                                    <state key="highlighted" backgroundImage="color_E.png"/>
+                                    <state key="disabled" image="trash_icon_disabled.png"/>
+                                    <state key="highlighted" image="trash_icon.png" backgroundImage="color_E.png"/>
                                     <connections>
                                         <action selector="onDeleteClick:" destination="-1" eventType="touchUpInside" id="VJS-p2-Jsp"/>
                                     </connections>
@@ -118,11 +122,12 @@
                                     <rect key="frame" x="300" y="0.0" width="75" height="66"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                                     <accessibility key="accessibilityConfiguration" label="Edit"/>
+                                    <inset key="contentEdgeInsets" minX="20" minY="20" maxX="20" maxY="15"/>
                                     <inset key="titleEdgeInsets" minX="0.0" minY="18" maxX="0.0" maxY="0.0"/>
-                                    <state key="normal" image="delete_default.png">
+                                    <state key="normal" image="trash_icon.png">
                                         <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
-                                    <state key="disabled" image="delete_disabled.png"/>
+                                    <state key="disabled" image="trash_icon_disabled.png"/>
                                     <state key="highlighted" backgroundImage="color_E.png"/>
                                     <connections>
                                         <action selector="onEditClick:" destination="TJG-JZ-YRR" eventType="touchUpInside" id="CKU-6b-3F2"/>
@@ -149,8 +154,9 @@
                                     <rect key="frame" x="225" y="0.0" width="75" height="66"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                                     <accessibility key="accessibilityConfiguration" label="Add contact"/>
+                                    <inset key="contentEdgeInsets" minX="20" minY="20" maxX="20" maxY="15"/>
                                     <inset key="titleEdgeInsets" minX="0.0" minY="18" maxX="0.0" maxY="0.0"/>
-                                    <state key="normal" image="contact_add_default.png">
+                                    <state key="normal" image="add_contact_btn.png">
                                         <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
                                     <state key="disabled" image="contact_add_disabled.png"/>
@@ -208,23 +214,20 @@
         </tableViewController>
     </objects>
     <resources>
+        <image name="add_contact_btn.png" width="234.5" height="214.5"/>
         <image name="cancel_edit_default.png" width="47.200000762939453" height="47.200000762939453"/>
         <image name="cancel_edit_disabled.png" width="47.200000762939453" height="47.200000762939453"/>
-        <image name="color_A.png" width="2" height="2"/>
         <image name="color_E.png" width="2" height="2"/>
         <image name="color_F.png" width="2" height="2"/>
-        <image name="contact_add_default.png" width="55.200000762939453" height="47.200000762939453"/>
+        <image name="color_L.png" width="2" height="2"/>
         <image name="contact_add_disabled.png" width="55.200000762939453" height="47.200000762939453"/>
-        <image name="contacts_all_default.png" width="52" height="44"/>
-        <image name="contacts_all_disabled.png" width="52" height="44"/>
-        <image name="contacts_all_selected.png" width="52" height="44"/>
-        <image name="contacts_sip_default.png" width="39.5" height="39.5"/>
+        <image name="contacts_icon.png" width="79" height="79"/>
         <image name="contacts_sip_disabled.png" width="38" height="30"/>
-        <image name="contacts_sip_selected.png" width="39.5" height="39.5"/>
-        <image name="delete_default.png" width="34.400001525878906" height="44.799999237060547"/>
-        <image name="delete_disabled.png" width="34.400001525878906" height="44.799999237060547"/>
         <image name="deselect_all.png" width="43.200000762939453" height="43.200000762939453"/>
         <image name="select_all_default.png" width="43.200000762939453" height="43.200000762939453"/>
         <image name="select_all_disabled.png" width="43.200000762939453" height="43.200000762939453"/>
+        <image name="trash_icon.png" width="79" height="79"/>
+        <image name="trash_icon_disabled.png" width="79" height="79"/>
+        <image name="vpbx_contacts.png" width="234.5" height="214.5"/>
     </resources>
 </document>

@@ -55,7 +55,7 @@
                     <rect key="frame" x="147" y="0.0" width="66" height="66"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                     <accessibility key="accessibilityConfiguration" label="Dialer"/>
-                    <inset key="contentEdgeInsets" minX="17" minY="17" maxX="17" maxY="17"/>
+                    <inset key="contentEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
                     <state key="normal" image="small_numpad.png"/>
                     <state key="disabled" image="footer_dialer_disabled.png"/>
                     <state key="highlighted" backgroundImage="color_L.png"/>
@@ -149,7 +149,7 @@
             <rect key="frame" x="0.0" y="0.0" width="90" height="333"/>
             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="color_C.png" id="V07-hP-Heu" userLabel="backgroundImage">
+                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="color_G.png" id="V07-hP-Heu" userLabel="backgroundImage">
                     <rect key="frame" x="0.0" y="0.0" width="90" height="333"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                 </imageView>
@@ -157,7 +157,8 @@
                     <rect key="frame" x="0.0" y="0.0" width="90" height="83"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                     <accessibility key="accessibilityConfiguration" label="History"/>
-                    <state key="normal" image="footer_history_default.png"/>
+                    <inset key="contentEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
+                    <state key="normal" image="small_icon_history.png"/>
                     <state key="disabled" image="footer_history_disabled.png"/>
                     <state key="highlighted" backgroundImage="color_A.png"/>
                     <connections>
@@ -168,8 +169,9 @@
                     <rect key="frame" x="0.0" y="84" width="90" height="83"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                     <accessibility key="accessibilityConfiguration" label="Contacts"/>
+                    <inset key="contentEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
                     <inset key="titleEdgeInsets" minX="0.0" minY="40" maxX="0.0" maxY="0.0"/>
-                    <state key="normal" image="footer_contacts_default.png"/>
+                    <state key="normal" image="small_icon_contact.png"/>
                     <state key="disabled" image="footer_contacts_disabled.png"/>
                     <state key="selected">
                         <color key="titleColor" red="0.76000285148620605" green="0.21515019237995148" blue="0.12376989424228668" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -183,7 +185,8 @@
                     <rect key="frame" x="0.0" y="168" width="90" height="83"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                     <accessibility key="accessibilityConfiguration" label="Dialer"/>
-                    <state key="normal" image="footer_dialer_default.png"/>
+                    <inset key="contentEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
+                    <state key="normal" image="small_icon_dialpad.png"/>
                     <state key="disabled" image="footer_dialer_disabled.png"/>
                     <state key="highlighted" backgroundImage="color_A.png"/>
                     <connections>
@@ -219,8 +222,9 @@
                     <rect key="frame" x="0.0" y="259" width="90" height="83"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                     <accessibility key="accessibilityConfiguration" label="Chat"/>
+                    <inset key="contentEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
                     <inset key="titleEdgeInsets" minX="0.0" minY="40" maxX="0.0" maxY="0.0"/>
-                    <state key="normal" image="footer_chat_default.png"/>
+                    <state key="normal" image="chatBubble.png"/>
                     <state key="disabled" image="footer_chat_disabled.png"/>
                     <state key="highlighted" backgroundImage="color_A.png"/>
                     <connections>
@@ -267,21 +271,19 @@
         </button>
     </objects>
     <resources>
+        <image name="chatBubble.png" width="234" height="214.5"/>
         <image name="color_A.png" width="2" height="2"/>
-        <image name="color_C.png" width="2" height="2"/>
         <image name="color_G.png" width="2" height="2"/>
         <image name="color_L.png" width="2" height="2"/>
-        <image name="footer_chat_default.png" width="44" height="44"/>
         <image name="footer_chat_disabled.png" width="44" height="44"/>
-        <image name="footer_contacts_default.png" width="47.200000762939453" height="47.200000762939453"/>
         <image name="footer_contacts_disabled.png" width="47.200000762939453" height="47.200000762939453"/>
         <image name="footer_dialer_default.png" width="44" height="44"/>
         <image name="footer_dialer_disabled.png" width="44" height="44"/>
-        <image name="footer_history_default.png" width="47.200000762939453" height="47.200000762939453"/>
         <image name="footer_history_disabled.png" width="47.200000762939453" height="47.200000762939453"/>
         <image name="history_chat_indicator.png" width="22.399999618530273" height="21.600000381469727"/>
         <image name="options_default.png" width="41.599998474121094" height="41.599998474121094"/>
         <image name="small_icon_contact.png" width="53" height="52"/>
+        <image name="small_icon_dialpad.png" width="53" height="52"/>
         <image name="small_icon_history.png" width="52" height="52"/>
         <image name="small_icon_message.png" width="53" height="52"/>
         <image name="small_numpad.png" width="52.799999237060547" height="52"/>
