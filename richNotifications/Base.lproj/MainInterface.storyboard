@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X9Y-jO-gVr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X9Y-jO-gVr">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -38,21 +38,21 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Lorem ipsum " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3tK-2u-Ixe">
-                                                    <rect key="frame" x="0.0" y="17" width="310" height="1.5"/>
+                                                    <rect key="frame" x="0.0" y="17" width="310" height="2"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="rnc-rL-KN8">
-                                                    <rect key="frame" x="0.0" y="18.5" width="310" height="13.5"/>
+                                                    <rect key="frame" x="0.0" y="19" width="310" height="13"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gv1-l8-gh3">
-                                                            <rect key="frame" x="0.0" y="0.0" width="292" height="13.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="292" height="13"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VYP-sN-Q5F">
-                                                            <rect key="frame" x="297" y="0.0" width="13" height="13.5"/>
+                                                            <rect key="frame" x="297" y="0.0" width="13" height="13"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="13" id="Drj-Lw-Eis"/>
                                                                 <constraint firstAttribute="width" constant="13" id="NvK-gG-A0n"/>
@@ -80,13 +80,13 @@
                                                 <constraint firstAttribute="width" constant="40" id="kWJ-Qu-esd"/>
                                             </constraints>
                                         </imageView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="color_A.png" translatesAutoresizingMaskIntoConstraints="NO" id="Wh2-bk-96C" userLabel="BottomBar">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="color_E.png" translatesAutoresizingMaskIntoConstraints="NO" id="Wh2-bk-96C" userLabel="BottomBar">
                                             <rect key="frame" x="0.0" y="43" width="375" height="1"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="1" id="xx0-Om-qom"/>
                                             </constraints>
                                         </imageView>
-                                        <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="color_A.png" translatesAutoresizingMaskIntoConstraints="NO" id="FHB-G3-atz">
+                                        <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="color_E.png" translatesAutoresizingMaskIntoConstraints="NO" id="FHB-G3-atz">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                         </imageView>
                                     </subviews>
@@ -130,6 +130,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="color_A.png" width="2" height="2"/>
+        <image name="color_E.png" width="2" height="2"/>
     </resources>
 </document>

@@ -48,7 +48,7 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                                             <accessibility key="accessibilityConfiguration" label="All contacts filter"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="9"/>
-                                            <inset key="contentEdgeInsets" minX="20" minY="20" maxX="20" maxY="15"/>
+                                            <inset key="contentEdgeInsets" minX="17" minY="17" maxX="17" maxY="12"/>
                                             <inset key="titleEdgeInsets" minX="0.0" minY="18" maxX="0.0" maxY="0.0"/>
                                             <state key="normal" image="contacts_icon.png">
                                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -72,7 +72,7 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                                             <accessibility key="accessibilityConfiguration" label="Linphone contacts filter"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="9"/>
-                                            <inset key="contentEdgeInsets" minX="20" minY="20" maxX="20" maxY="15"/>
+                                            <inset key="contentEdgeInsets" minX="17" minY="17" maxX="17" maxY="12"/>
                                             <inset key="titleEdgeInsets" minX="0.0" minY="18" maxX="0.0" maxY="0.0"/>
                                             <state key="normal" image="vpbx_contacts.png">
                                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

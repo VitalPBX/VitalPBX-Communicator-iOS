@@ -45,10 +45,18 @@
 	[super viewWillAppear:animated];
 
 	_sideMenuEntries = [[NSMutableArray alloc] init];
+    
+    /**
+     * initialize images *
+     **/
+    UIImage *accountAssistantImage = [UIImage imageNamed:@"account_settings_icon.png"];
+    UIImage *settingsImage = [UIImage imageNamed:@"menu_options.png"];
+    UIImage *recordingsImage = [UIImage imageNamed:@"menu_recordings.png"];
+    UIImage *aboutImage = [UIImage imageNamed:@"menu_about.png"];
 
 	[_sideMenuEntries
 		addObject:[[SideMenuEntry alloc] initWithTitle:NSLocalizedString(@"Assistant", nil)
-                                                 image:[UIImage imageNamed:@"menu_assistant.png"]
+                                                 image:accountAssistantImage
 											  tapBlock:^() {
 												[PhoneMainView.instance
 													changeCurrentView:AssistantView.compositeViewDescription];
@@ -67,14 +75,14 @@
     
 	[_sideMenuEntries
 		addObject:[[SideMenuEntry alloc] initWithTitle:NSLocalizedString(@"Settings", nil)
-                                                 image:[UIImage imageNamed:@"menu_options.png"]
+                                                 image:settingsImage
 											  tapBlock:^() {
 												[PhoneMainView.instance
 													changeCurrentView:SettingsView.compositeViewDescription];
 											  }]];
     [_sideMenuEntries
      addObject:[[SideMenuEntry alloc] initWithTitle:NSLocalizedString(@"Recordings", nil)
-                                              image:[UIImage imageNamed:@"menu_recordings.png"]
+                                              image:recordingsImage
                                            tapBlock:^() {
                                                [PhoneMainView.instance
                                                 changeCurrentView:RecordingsListView.compositeViewDescription];
@@ -90,7 +98,7 @@
 												  }]];
 	}
 	[_sideMenuEntries addObject:[[SideMenuEntry alloc] initWithTitle:NSLocalizedString(@"About", nil)
-                                                               image:[UIImage imageNamed:@"menu_about.png"]
+                                                               image:aboutImage
 															tapBlock:^() {
 															  [PhoneMainView.instance
 																  changeCurrentView:AboutView.compositeViewDescription];

@@ -43,12 +43,13 @@
                                             <rect key="frame" x="0.0" y="0.0" width="75" height="66"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             <accessibility key="accessibilityConfiguration" label="All contacts filter"/>
+                                            <inset key="contentEdgeInsets" minX="15" minY="10" maxX="15" maxY="10"/>
                                             <inset key="titleEdgeInsets" minX="0.0" minY="16" maxX="0.0" maxY="0.0"/>
-                                            <state key="normal" image="history_all_default.png">
+                                            <state key="normal" image="all_calls_icon.png">
                                                 <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
-                                            <state key="disabled" image="history_all_disabled.png"/>
-                                            <state key="selected" image="history_all_selected.png"/>
+                                            <state key="disabled" image="all_calls_icon.png"/>
+                                            <state key="selected" image="all_calls_icon.png"/>
                                             <state key="highlighted" backgroundImage="color_E.png"/>
                                             <connections>
                                                 <action selector="onAllClick:" destination="-1" eventType="touchUpInside" id="29"/>
@@ -58,17 +59,18 @@
                                             <rect key="frame" x="75" y="0.0" width="75" height="66"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             <accessibility key="accessibilityConfiguration" label="Missed contacts filter"/>
-                                            <state key="normal" image="history_missed_default.png">
+                                            <inset key="contentEdgeInsets" minX="17" minY="15" maxX="17" maxY="10"/>
+                                            <state key="normal" image="call_missed_top.png">
                                                 <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
-                                            <state key="disabled" image="history_missed_disabled.png"/>
-                                            <state key="selected" image="history_missed_selected.png"/>
+                                            <state key="disabled" image="call_missed_top.png"/>
+                                            <state key="selected" image="call_missed_top.png"/>
                                             <state key="highlighted" backgroundImage="color_E.png"/>
                                             <connections>
                                                 <action selector="onMissedClick:" destination="-1" eventType="touchUpInside" id="30"/>
                                             </connections>
                                         </button>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="color_A.png" id="o8E-gw-vhI" userLabel="selectedButtonImage">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="color_L.png" id="o8E-gw-vhI" userLabel="selectedButtonImage">
                                             <rect key="frame" x="0.0" y="63" width="75" height="3"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
                                         </imageView>
@@ -108,11 +110,12 @@
                                     <rect key="frame" x="300" y="0.0" width="75" height="66"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                                     <accessibility key="accessibilityConfiguration" label="Delete all"/>
+                                    <inset key="contentEdgeInsets" minX="20" minY="20" maxX="20" maxY="15"/>
                                     <inset key="titleEdgeInsets" minX="0.0" minY="18" maxX="0.0" maxY="0.0"/>
-                                    <state key="normal" image="delete_default.png">
+                                    <state key="normal" image="trash_icon.png">
                                         <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
-                                    <state key="disabled" image="delete_disabled.png"/>
+                                    <state key="disabled" image="trash_icon_disabled.png"/>
                                     <state key="highlighted" backgroundImage="color_E.png"/>
                                     <connections>
                                         <action selector="onDeleteClick:" destination="-1" eventType="touchUpInside" id="37"/>
@@ -122,11 +125,12 @@
                                     <rect key="frame" x="300" y="0.0" width="75" height="66"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                                     <accessibility key="accessibilityConfiguration" label="Edit"/>
+                                    <inset key="contentEdgeInsets" minX="20" minY="20" maxX="20" maxY="15"/>
                                     <inset key="titleEdgeInsets" minX="0.0" minY="18" maxX="0.0" maxY="0.0"/>
-                                    <state key="normal" image="delete_default.png">
+                                    <state key="normal" image="trash_icon.png">
                                         <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
-                                    <state key="disabled" image="delete_disabled.png"/>
+                                    <state key="disabled" image="trash_icon_disabled.png"/>
                                     <state key="highlighted" backgroundImage="color_E.png"/>
                                     <connections>
                                         <action selector="onEditClick:" destination="18" eventType="touchUpInside" id="5Ft-HW-cVh"/>
@@ -176,21 +180,17 @@
         </tableViewController>
     </objects>
     <resources>
+        <image name="all_calls_icon.png" width="66" height="66"/>
+        <image name="call_missed_top.png" width="66" height="66"/>
         <image name="cancel_edit_default.png" width="47.200000762939453" height="47.200000762939453"/>
         <image name="cancel_edit_disabled.png" width="47.200000762939453" height="47.200000762939453"/>
-        <image name="color_A.png" width="2" height="2"/>
         <image name="color_E.png" width="2" height="2"/>
         <image name="color_F.png" width="2" height="2"/>
-        <image name="delete_default.png" width="34.400001525878906" height="44.799999237060547"/>
-        <image name="delete_disabled.png" width="34.400001525878906" height="44.799999237060547"/>
+        <image name="color_L.png" width="2" height="2"/>
         <image name="deselect_all.png" width="43.200000762939453" height="43.200000762939453"/>
-        <image name="history_all_default.png" width="52.799999237060547" height="51.200000762939453"/>
-        <image name="history_all_disabled.png" width="52.799999237060547" height="51.200000762939453"/>
-        <image name="history_all_selected.png" width="52.799999237060547" height="51.200000762939453"/>
-        <image name="history_missed_default.png" width="52.799999237060547" height="52.799999237060547"/>
-        <image name="history_missed_disabled.png" width="52.799999237060547" height="52.799999237060547"/>
-        <image name="history_missed_selected.png" width="52.799999237060547" height="52.799999237060547"/>
         <image name="select_all_default.png" width="43.200000762939453" height="43.200000762939453"/>
         <image name="select_all_disabled.png" width="43.200000762939453" height="43.200000762939453"/>
+        <image name="trash_icon.png" width="79" height="79"/>
+        <image name="trash_icon_disabled.png" width="79" height="79"/>
     </resources>
 </document>

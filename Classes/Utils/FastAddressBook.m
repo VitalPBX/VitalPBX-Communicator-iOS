@@ -32,7 +32,7 @@
 	@synchronized(LinphoneManager.instance.fastAddressBook.addressBookMap) {
 		UIImage *retImage = [contact avatar];
 		if (retImage == nil) {
-			retImage = [UIImage imageNamed:@"avatar.png"];
+			retImage = [UIImage imageNamed:@"contact.png"];
 		}
 		if (retImage.size.width != retImage.size.height) {
 			retImage = [retImage squareCrop];

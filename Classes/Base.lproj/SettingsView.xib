@@ -78,10 +78,12 @@
             <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" barStyle="black" translucent="NO" id="11" userLabel="navigationBar" customClass="UINavigationBarEx">
                 <autoresizingMask key="autoresizingMask"/>
             </navigationBar>
+            <point key="canvasLocation" x="648" y="175"/>
         </navigationController>
         <viewController autoresizesArchivedViewToFullSize="NO" id="6" userLabel="settingsController" customClass="IASKAppSettingsViewControllerEx">
             <extendedEdge key="edgesForExtendedLayout"/>
             <navigationItem key="navigationItem" id="14" userLabel="settingsItem"/>
+            <point key="canvasLocation" x="1390" y="175"/>
         </viewController>
     </objects>
     <resources>

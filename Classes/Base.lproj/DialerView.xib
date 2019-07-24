@@ -89,10 +89,11 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                     <accessibility key="accessibilityConfiguration" label="Back"/>
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                    <state key="normal" image="call_alt_back_default.png">
+                                    <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                    <state key="normal" image="back_to_call_icon.png">
                                         <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
-                                    <state key="disabled" image="call_alt_back_disabled.png"/>
+                                    <state key="disabled" image="back_to_call_icon.png"/>
                                     <state key="highlighted" backgroundImage="color_E.png"/>
                                     <connections>
                                         <action selector="onBackClick:" destination="-1" eventType="touchUpInside" id="233"/>
@@ -307,11 +308,10 @@
         <image name="Digit_asterisk.png" width="234" height="214"/>
         <image name="Digit_hashtag.png" width="234" height="214"/>
         <image name="add_contact_btn.png" width="234.5" height="214.5"/>
+        <image name="back_to_call_icon.png" width="450" height="450"/>
         <image name="backspace_default.png" width="58.400001525878906" height="30.399999618530273"/>
         <image name="backspace_disabled.png" width="58.400001525878906" height="30.399999618530273"/>
         <image name="backspace_over.png" width="58.400001525878906" height="30.399999618530273"/>
-        <image name="call_alt_back_default.png" width="81.599998474121094" height="58.400001525878906"/>
-        <image name="call_alt_back_disabled.png" width="81.599998474121094" height="58.400001525878906"/>
         <image name="color_E.png" width="2" height="2"/>
         <image name="color_F.png" width="2" height="2"/>
         <image name="color_H.png" width="2" height="2"/>
