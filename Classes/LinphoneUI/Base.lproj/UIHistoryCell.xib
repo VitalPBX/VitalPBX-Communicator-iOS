@@ -48,7 +48,7 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="contact.png" highlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" id="J9B-Wl-Qgm" userLabel="avatarImage" customClass="UIRoundedImageView">
                     <rect key="frame" x="6" y="6" width="32" height="32"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.77330091818695312" green="0.77810402948003976" blue="0.76849780689386638" alpha="0.83838578345070425" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" red="0.95285779237747192" green="0.95299452543258667" blue="0.95282799005508423" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>

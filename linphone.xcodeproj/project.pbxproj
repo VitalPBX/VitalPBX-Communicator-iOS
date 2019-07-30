@@ -715,6 +715,8 @@
 		8CF25D9E1F9F76BD00BEA0C1 /* chat_group_informations@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF25D9C1F9F76BD00BEA0C1 /* chat_group_informations@2x.png */; };
 		A61CB6C622DF9404009EF4CA /* contact@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A61CB6C522DF9403009EF4CA /* contact@2x.png */; };
 		A61CB6C822DFB218009EF4CA /* chatBubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A61CB6C722DFB217009EF4CA /* chatBubble@2x.png */; };
+		A62CDBCD22F09B0200BC0810 /* back_button_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A62CDBCC22F09B0100BC0810 /* back_button_icon.png */; };
+		A62CDBD122F0A52000BC0810 /* backspace_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A62CDBD022F0A51F00BC0810 /* backspace_icon.png */; };
 		A634ABAFCB39B6AAE4CA991D /* Pods_linphone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65CEDD144CABFAA70A29AF27 /* Pods_linphone.framework */; };
 		A68541A422E1012600678DEF /* small_icon_dialpad.png in Resources */ = {isa = PBXBuildFile; fileRef = A68541A322E1012500678DEF /* small_icon_dialpad.png */; };
 		A68541A622E1012C00678DEF /* small_icon_history.png in Resources */ = {isa = PBXBuildFile; fileRef = A68541A522E1012C00678DEF /* small_icon_history.png */; };
@@ -1835,6 +1837,8 @@
 		9CBD6E980619195CB7EE32AC /* Pods_liblinphoneTester.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_liblinphoneTester.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A61CB6C522DF9403009EF4CA /* contact@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "contact@2x.png"; path = "../../../../Iconos iOS/misc icons/contact@2x.png"; sourceTree = "<group>"; };
 		A61CB6C722DFB217009EF4CA /* chatBubble@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "chatBubble@2x.png"; path = "../../../../Iconos iOS/misc icons/chatBubble@2x.png"; sourceTree = "<group>"; };
+		A62CDBCC22F09B0100BC0810 /* back_button_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = back_button_icon.png; path = "../../../../Iconos iOS/misc icons/back_button_icon.png"; sourceTree = "<group>"; };
+		A62CDBD022F0A51F00BC0810 /* backspace_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backspace_icon.png; path = "../../../../Iconos iOS/misc icons/backspace_icon.png"; sourceTree = "<group>"; };
 		A68541A322E1012500678DEF /* small_icon_dialpad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_icon_dialpad.png; sourceTree = "<group>"; };
 		A68541A522E1012C00678DEF /* small_icon_history.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_icon_history.png; sourceTree = "<group>"; };
 		A68541A722E1013100678DEF /* small_icon_message.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_icon_message.png; sourceTree = "<group>"; };
@@ -2743,6 +2747,8 @@
 		633FEBE11D3CD5570014B822 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				A62CDBD022F0A51F00BC0810 /* backspace_icon.png */,
+				A62CDBCC22F09B0100BC0810 /* back_button_icon.png */,
 				633FEBE21D3CD5570014B822 /* add_field_default.png */,
 				633FEBE31D3CD5570014B822 /* add_field_default@2x.png */,
 				633FEBE41D3CD5570014B822 /* add_field_over.png */,
@@ -4102,6 +4108,7 @@
 				24BFAAA0209B0630004F47A7 /* contacts_sip_default@2x.png in Resources */,
 				8CF25D9D1F9F76BD00BEA0C1 /* chat_group_informations.png in Resources */,
 				633FEDFB1D3CD5590014B822 /* camera_selected@2x.png in Resources */,
+				A62CDBD122F0A52000BC0810 /* backspace_icon.png in Resources */,
 				633FEF051D3CD55A0014B822 /* options_selected@2x.png in Resources */,
 				633FEDD61D3CD5590014B822 /* call_start_body_default.png in Resources */,
 				633FEEEC1D3CD55A0014B822 /* numpad_hash_default@2x.png in Resources */,
@@ -4159,6 +4166,7 @@
 				24BFAAA5209B0630004F47A7 /* contacts_sip_default.png in Resources */,
 				633FEF441D3CD55A0014B822 /* speaker_default.png in Resources */,
 				639CEB031A1DF4EB004DE38F /* UICompositeView.xib in Resources */,
+				A62CDBCD22F09B0200BC0810 /* back_button_icon.png in Resources */,
 				633FEF3A1D3CD55A0014B822 /* security_ko.png in Resources */,
 				615A283A2180788E0060F920 /* security_toogle_button.png in Resources */,
 				633FEDA01D3CD5590014B822 /* avatar.png in Resources */,

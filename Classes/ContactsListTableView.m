@@ -359,6 +359,7 @@ static int ms_strcmpfuz(const char *fuzzy_word, const char *sentence) {
 	// Cached avatar
 	UIImage *image = [FastAddressBook imageForContact:contact];
 	[cell.avatarImage setImage:image bordered:NO withRoundedRadius:YES];
+    [cell.avatarImage setBackgroundColor:[UIColor colorWithRed:243/255.0 green:243/255.0 blue:243/255.0 alpha:1.0]];
 	[cell setContact:contact];
 	[super accessoryForCell:cell atPath:indexPath];
 

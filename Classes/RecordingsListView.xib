@@ -50,11 +50,12 @@
                             <rect key="frame" x="300" y="0.0" width="75" height="66"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                             <accessibility key="accessibilityConfiguration" label="Delete all"/>
+                            <inset key="contentEdgeInsets" minX="15" minY="15" maxX="15" maxY="10"/>
                             <inset key="titleEdgeInsets" minX="0.0" minY="18" maxX="0.0" maxY="0.0"/>
-                            <state key="normal" image="delete_default.png">
+                            <state key="normal" image="trash_icon.png">
                                 <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
-                            <state key="disabled" image="delete_disabled.png"/>
+                            <state key="disabled" image="trash_icon_disabled.png"/>
                             <state key="highlighted" backgroundImage="color_E.png"/>
                             <connections>
                                 <action selector="onDeleteClick:" destination="-1" eventType="touchUpInside" id="8LI-ry-dTU"/>
@@ -64,11 +65,12 @@
                             <rect key="frame" x="300" y="0.0" width="75" height="66"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                             <accessibility key="accessibilityConfiguration" label="Edit"/>
+                            <inset key="contentEdgeInsets" minX="15" minY="15" maxX="15" maxY="10"/>
                             <inset key="titleEdgeInsets" minX="0.0" minY="18" maxX="0.0" maxY="0.0"/>
-                            <state key="normal" image="delete_default.png">
+                            <state key="normal" image="trash_icon.png">
                                 <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
-                            <state key="disabled" image="delete_disabled.png"/>
+                            <state key="disabled" image="trash_icon_disabled.png"/>
                             <state key="highlighted" backgroundImage="color_E.png"/>
                             <connections>
                                 <action selector="onEditClick:" destination="1pR-qo-CIP" eventType="touchUpInside" id="0LH-n9-p0c"/>
@@ -97,11 +99,11 @@
                             <accessibility key="accessibilityConfiguration" label="Back"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <inset key="titleEdgeInsets" minX="0.0" minY="18" maxX="0.0" maxY="0.0"/>
-                            <state key="normal" image="back_default.png">
+                            <state key="normal" image="back_button_icon.png">
                                 <color key="titleColor" red="0.28619974850000002" green="0.3214434981" blue="0.3598001301" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
-                            <state key="disabled" image="back_disabled.png"/>
+                            <state key="disabled" image="back_button_icon.png"/>
                             <state key="highlighted" backgroundImage="color_E.png"/>
                             <connections>
                                 <action selector="onBackPressed:" destination="-1" eventType="touchUpInside" id="Quz-zf-q3K"/>
@@ -144,16 +146,15 @@
         </tableViewController>
     </objects>
     <resources>
-        <image name="back_default.png" width="38.400001525878906" height="35.200000762939453"/>
-        <image name="back_disabled.png" width="38.400001525878906" height="35.200000762939453"/>
+        <image name="back_button_icon.png" width="24" height="21"/>
         <image name="cancel_edit_default.png" width="47.200000762939453" height="47.200000762939453"/>
         <image name="cancel_edit_disabled.png" width="47.200000762939453" height="47.200000762939453"/>
         <image name="color_E.png" width="2" height="2"/>
         <image name="color_F.png" width="2" height="2"/>
-        <image name="delete_default.png" width="34.400001525878906" height="44.799999237060547"/>
-        <image name="delete_disabled.png" width="34.400001525878906" height="44.799999237060547"/>
         <image name="deselect_all.png" width="43.200000762939453" height="43.200000762939453"/>
         <image name="select_all_default.png" width="43.200000762939453" height="43.200000762939453"/>
         <image name="select_all_disabled.png" width="43.200000762939453" height="43.200000762939453"/>
+        <image name="trash_icon.png" width="79" height="79"/>
+        <image name="trash_icon_disabled.png" width="79" height="79"/>
     </resources>
 </document>

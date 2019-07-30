@@ -39,8 +39,7 @@
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SETTINGS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SqM-h2-idp" userLabel="titleLabel">
                                     <rect key="frame" x="92" y="0.0" width="230" height="66"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
-                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
-                                    <color key="textColor" red="0.98766469955444336" green="0.27512490749359131" blue="0.029739789664745331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="26"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gTj-vM-UtG" userLabel="backButton" customClass="UIIconButton">
@@ -48,10 +47,10 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                                     <accessibility key="accessibilityConfiguration" label="Back"/>
                                     <inset key="titleEdgeInsets" minX="0.0" minY="18" maxX="0.0" maxY="0.0"/>
-                                    <state key="normal" image="back_default.png">
+                                    <state key="normal" image="back_button_icon.png">
                                         <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
-                                    <state key="disabled" image="back_disabled.png"/>
+                                    <state key="disabled" image="back_button_icon.png"/>
                                     <state key="highlighted" backgroundImage="color_E.png"/>
                                     <connections>
                                         <action selector="onBackClick:" destination="-1" eventType="touchUpInside" id="0PT-42-Pyi"/>
@@ -87,8 +86,7 @@
         </viewController>
     </objects>
     <resources>
-        <image name="back_default.png" width="38.400001525878906" height="35.200000762939453"/>
-        <image name="back_disabled.png" width="38.400001525878906" height="35.200000762939453"/>
+        <image name="back_button_icon.png" width="24" height="21"/>
         <image name="color_E.png" width="2" height="2"/>
         <image name="color_F.png" width="2" height="2"/>
     </resources>

@@ -63,11 +63,11 @@
                                     <accessibility key="accessibilityConfiguration" label="Back"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <inset key="titleEdgeInsets" minX="0.0" minY="18" maxX="0.0" maxY="0.0"/>
-                                    <state key="normal" image="back_default.png">
+                                    <state key="normal" image="back_button_icon.png">
                                         <color key="titleColor" red="0.28619974851608276" green="0.32144349813461304" blue="0.35980013012886047" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
-                                    <state key="disabled" image="back_disabled.png"/>
+                                    <state key="disabled" image="back_button_icon.png"/>
                                     <state key="highlighted" backgroundImage="color_E.png"/>
                                     <connections>
                                         <action selector="onBackClick:" destination="-1" eventType="touchUpInside" id="10"/>
@@ -78,12 +78,13 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                                     <accessibility key="accessibilityConfiguration" label="Delete"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <inset key="contentEdgeInsets" minX="15" minY="15" maxX="15" maxY="10"/>
                                     <inset key="titleEdgeInsets" minX="0.0" minY="18" maxX="0.0" maxY="0.0"/>
-                                    <state key="normal" image="delete_default.png">
+                                    <state key="normal" image="trash_icon.png">
                                         <color key="titleColor" red="0.28619974851608276" green="0.32144349813461304" blue="0.35980013012886047" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
-                                    <state key="disabled" image="delete_disabled.png"/>
+                                    <state key="disabled" image="trash_icon_disabled.png"/>
                                     <state key="highlighted" backgroundImage="color_E.png"/>
                                     <connections>
                                         <action selector="onDeleteClick:" destination="-1" eventType="touchUpInside" id="vxj-6p-8lE"/>
@@ -115,6 +116,7 @@
                                 <imageView tag="8" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar.png" id="B6X-C9-2vm" userLabel="avatarImage" customClass="UIRoundedImageView">
                                     <rect key="frame" x="142" y="10" width="90" height="90"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.95285779237747192" green="0.95299452543258667" blue="0.95282799005508423" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <connections>
                                         <outletCollection property="gestureRecognizers" destination="8bV-f4-pLL" appends="YES" id="4V5-Px-aHT"/>
                                     </connections>
@@ -202,11 +204,11 @@
                                     <accessibility key="accessibilityConfiguration" label="Back"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <inset key="titleEdgeInsets" minX="0.0" minY="18" maxX="0.0" maxY="0.0"/>
-                                    <state key="normal" image="back_default.png">
+                                    <state key="normal" image="back_button_icon.png">
                                         <color key="titleColor" red="0.28619974851608276" green="0.32144349813461304" blue="0.35980013012886047" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
-                                    <state key="disabled" image="back_disabled.png"/>
+                                    <state key="disabled" image="back_button_icon.png"/>
                                     <state key="highlighted" backgroundImage="color_E.png"/>
                                     <connections>
                                         <action selector="onBackClick:" destination="-1" eventType="touchUpInside" id="9Bf-9b-t68"/>
@@ -217,12 +219,13 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                                     <accessibility key="accessibilityConfiguration" label="Delete"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <inset key="contentEdgeInsets" minX="15" minY="15" maxX="15" maxY="10"/>
                                     <inset key="titleEdgeInsets" minX="0.0" minY="18" maxX="0.0" maxY="0.0"/>
-                                    <state key="normal" image="delete_default.png">
+                                    <state key="normal" image="trash_icon.png">
                                         <color key="titleColor" red="0.28619974851608276" green="0.32144349813461304" blue="0.35980013012886047" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
-                                    <state key="disabled" image="delete_disabled.png"/>
+                                    <state key="disabled" image="trash_icon.png"/>
                                     <state key="highlighted" backgroundImage="color_E.png"/>
                                     <connections>
                                         <action selector="onDeleteClick:" destination="-1" eventType="touchUpInside" id="9ng-e2-HNr"/>
@@ -254,6 +257,7 @@
                                 <imageView tag="8" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar.png" id="IJJ-eZ-rC2" userLabel="avatarImage" customClass="UIRoundedImageView">
                                     <rect key="frame" x="46" y="8" width="62" height="62"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.95285779240000001" green="0.95299452539999996" blue="0.95282799009999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" tag="9" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Doe" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ozv-hZ-xHz" userLabel="nameLabel">
                                     <rect key="frame" x="116" y="8" width="551" height="62"/>
@@ -318,16 +322,15 @@
     </objects>
     <resources>
         <image name="avatar.png" width="414.39999389648438" height="414.39999389648438"/>
-        <image name="back_default.png" width="38.400001525878906" height="35.200000762939453"/>
-        <image name="back_disabled.png" width="38.400001525878906" height="35.200000762939453"/>
+        <image name="back_button_icon.png" width="24" height="21"/>
         <image name="cancel_edit_default.png" width="47.200000762939453" height="47.200000762939453"/>
         <image name="cancel_edit_disabled.png" width="47.200000762939453" height="47.200000762939453"/>
         <image name="color_E.png" width="2" height="2"/>
         <image name="color_F.png" width="2" height="2"/>
-        <image name="delete_default.png" width="34.400001525878906" height="44.799999237060547"/>
-        <image name="delete_disabled.png" width="34.400001525878906" height="44.799999237060547"/>
         <image name="edit_default.png" width="46.400001525878906" height="46.400001525878906"/>
         <image name="edit_disabled.png" width="46.400001525878906" height="46.400001525878906"/>
+        <image name="trash_icon.png" width="79" height="79"/>
+        <image name="trash_icon_disabled.png" width="79" height="79"/>
         <image name="valid_default.png" width="44.799999237060547" height="30.399999618530273"/>
     </resources>
 </document>

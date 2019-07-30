@@ -133,8 +133,10 @@
 		[((IASKSwitchEx *)cell.accessoryView) addTarget:self
 												 action:@selector(toggledValue:)
 									   forControlEvents:UIControlEventValueChanged];
-		[((IASKSwitchEx *)cell.accessoryView) setOnTintColor:LINPHONE_MAIN_COLOR];
-		cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        //[((IASKSwitchEx *)cell.accessoryView) setOnTintColor:[UIColor greenColor]];
+        [((IASKSwitchEx *)cell.accessoryView) setOnTintColor:[UIColor colorWithRed:142/255.0 green:191/255.0 blue:53/255.0 alpha:1]];
+        
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
 		cell.textLabel.minimumScaleFactor = kIASKMinimumFontSize / [UIFont systemFontSize];
 		cell.detailTextLabel.minimumScaleFactor = kIASKMinimumFontSize / [UIFont systemFontSize];
 	} else {
@@ -234,13 +236,13 @@
 
 	if ([cell isKindOfClass:[IASKPSTextFieldSpecifierViewCell class]]) {
 		UITextField *field = ((IASKPSTextFieldSpecifierViewCell *)cell).textField;
-		[field setTextColor:LINPHONE_MAIN_COLOR];
+		[field setTextColor:[UIColor blackColor]];
 	}
 
 	if ([cell isKindOfClass:[IASKPSTitleValueSpecifierViewCell class]]) {
 		cell.detailTextLabel.textColor = [UIColor grayColor];
 	} else {
-		cell.detailTextLabel.textColor = LINPHONE_MAIN_COLOR;
+		cell.detailTextLabel.textColor = [UIColor blackColor];
 	}
 	return cell;
 }
@@ -254,7 +256,7 @@
 @implementation UINavigationBarEx
 
 INIT_WITH_COMMON_CF {
-	[self setTintColor:[LINPHONE_MAIN_COLOR adjustHue:5.0f / 180.0f saturation:0.0f brightness:0.0f alpha:0.0f]];
+	[self setTintColor:[[UIColor blackColor] adjustHue:5.0f / 180.0f saturation:0.0f brightness:0.0f alpha:0.0f]];
 	return self;
 }
 
